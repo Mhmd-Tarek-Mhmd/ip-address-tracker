@@ -1,4 +1,5 @@
 import "./style.css";
+import "./services";
 
 const App = `
   <main>

@@ -1,3 +1,3 @@
-document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <h1>Hello World</h1>
-`;
+import App from "./app";
+
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = App;

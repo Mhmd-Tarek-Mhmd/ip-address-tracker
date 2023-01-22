@@ -1,3 +1,5 @@
+import "./style.css";
+
 const App = `
   <main>
     <header class="header">

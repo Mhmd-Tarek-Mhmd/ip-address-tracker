@@ -1,5 +1,6 @@
 import "./style.css";
-import "./services";
+import "leaflet/dist/leaflet.css";
+import scripts from "./script";
 
 const App = `
   <main>
@@ -30,3 +31,4 @@ const App = `
 `;
 
 export default App;
+document.addEventListener("DOMContentLoaded", scripts);

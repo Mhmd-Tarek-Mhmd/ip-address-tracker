@@ -130,7 +130,7 @@ body {
 }
 @media (min-width: 992px) {
   .header__info {
-    height: 114px;
+    height: 160px;
     padding: 0 32px;
     text-align: left;
     margin-top: 48px;
@@ -139,13 +139,16 @@ body {
     align-content: center;
     grid-template-columns: repeat(4, 1fr);
   }
-  .header__info__slot:not(:last-child) {
+  .header__info__slot:not(:first-child) {
     position: relative;
+    padding-left: 32px;
   }
-  .header__info__slot:not(:last-child)::before {
-    right: 0;
+  .header__info__slot:not(:first-child)::before {
+    left: 0;
     top: 4px;
     width: 1px;
+    content: "";
+    opacity: 0.4;
     position: absolute;
     height: calc(100% - 8px);
     background-color: var(--gray);
@@ -161,7 +164,7 @@ body {
 }
 .header__info__title {
   display: block;
-  font-size: 10px;
+  font-size: 11px;
   color: var(--gray);
   letter-spacing: 2px;
   margin-bottom: 10px;
@@ -170,6 +173,16 @@ body {
 .header__info__value {
   font-weight: 500;
   font-size: 18px;
+}
+@media (min-width: 992px) {
+  .header__info__value {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .header__info__value {
+    font-size: 1.57rem;
+  }
 }
 
 /* Map styles */

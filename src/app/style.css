@@ -83,6 +83,11 @@ body {
   color: var(--white);
   margin-bottom: 30px;
 }
+@media (min-width: 992px) {
+  .header__title {
+    font-size: 1.97rem;
+  }
+}
 
 /* Search styles */
 .header__search {

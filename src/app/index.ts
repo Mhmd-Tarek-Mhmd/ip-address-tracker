@@ -16,7 +16,7 @@ const App = `
           aria-label="Search for any IP address or domain"
           placeholder="Search for any IP address or domain"
         />
-        <button type="submit" class="header__search__submit">
+        <button type="submit" aria-label="Search" class="header__search__submit">
           <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
         </button>
       </form>
